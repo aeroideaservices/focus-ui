@@ -1,0 +1,133 @@
+.awi {
+  display: flex;
+  gap: 8px;
+  padding: 5px 0;
+  width: calc(100% - 8px);
+  box-sizing: border-box;
+}
+
+.awi--switched {
+  flex-direction: row-reverse;
+}
+
+.awi__container {
+  display: flex;
+  flex: 1 0 calc(50% - 4px);
+  flex-direction: column;
+  gap: 8px;
+}
+
+.awi__block {
+  min-height: 125px;
+  border: 1px solid #E8ECF0;
+  box-shadow: inset 0 1px 2px 0 rgba(35, 44, 72, .06);
+  border-radius: 4px;
+}
+
+.awi__textarea {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 12px;
+  overflow: auto;
+}
+
+.awi__textarea[data-placeholder]:empty::before {
+  content: attr(data-placeholder);
+  color: #adb5bd;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.awi__textarea::placeholder {
+  opacity: 1;
+  color: #adb5bd;
+}
+
+.awi__image-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.awi__image-holder__icon {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 12px;
+  color: #adb5bd;
+}
+
+.awi__image-holder__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #adb5bd;
+}
+
+.awi__preview {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.awi__preview-fotter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 10px 12px;
+  background-color: #F6F8F8;
+  box-sizing: border-box;
+}
+
+.awi__preview-btn {
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  color: #adb5bd;
+  background: transparent;
+  cursor: pointer;
+}
+
+.awi__preview-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.awi-hidden {
+  display: none;
+}
+
+.awi__loader {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #adb5bd;
+}
+
+.awi__loader > div {
+  width: 48px;
+  height: 48px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

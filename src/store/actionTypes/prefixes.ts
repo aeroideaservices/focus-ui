@@ -1,0 +1,9 @@
+export const LOAD = 'LOAD_';
+export const UPDATE = 'UPDATE_';
+export const RESET = 'RESET_';
+export const GET = 'GET_';
+export const SET = 'SET_';
+export const CLEAR = 'CLEAR_';
+export const ADD = 'ADD_';
+export const REMOVE = 'REMOVE_';
+export const HAS = 'HAS_';

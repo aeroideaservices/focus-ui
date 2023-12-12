@@ -1,0 +1,419 @@
+.bejs {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.bejs__container {
+  margin-bottom: 10px;
+}
+
+.bejs__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bejs__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.bejs__footer {
+  position: relative;
+}
+
+.bejs__footer > * {
+  margin-bottom: 10px;
+}
+
+.bejs__footer > *:last-child {
+  margin-bottom: 0;
+}
+
+.bejs__banner {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.bejs__banner:first-child {
+  margin-top: 0;
+}
+
+.bejs__banner-left-container {
+  width: 100%;
+}
+
+.bejs__banner-right-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bejs__banner-del-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 7px 0;
+  color: #121212;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+}
+
+.bejs__banner-del-button:hover {
+  background-color: #F6F8F8;
+}
+
+.bejs__banner-del-button > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.bejs__banner-add-button {
+  font-size: 14px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 4px;
+  color: #121212;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+}
+
+.bejs__banner-add-button:hover {
+  background-color: #F6F8F8;
+}
+
+.bejs__block {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bejs__block-name {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.bejs__block-container {
+  display: flex;
+  gap: 20px;
+}
+
+.bejs__image-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 130px;
+  max-height: 130px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bejs__image-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.bejs__image-holder__input {
+  display: none;
+}
+
+.bejs__image-holder__icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+  color: #adb5bd;
+}
+
+.bejs__image-holder__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #adb5bd;
+}
+
+.bejs__input {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+  color: #121212;
+  display: block;
+  text-align: left;
+  height: 36px;
+  min-height: 36px;
+  padding-left: 12px;
+  padding-right: 30px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+}
+
+.bejs__input:focus-visible {
+  outline: none;
+  border-color: #228be6;
+}
+
+.bejs__input::placeholder {
+  opacity: 1;
+  color: #adb5bd;
+}
+
+.bejs__input[data-placeholder]:empty::before {
+  content: attr(data-placeholder);
+  color: #adb5bd;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.bejs__preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.bejs__preview-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 1px;
+  width: 100%;
+  height: 30px;
+  background-color: #F6F8F8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bejs__preview-button {
+  font-size: 12px;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border: 0;
+  color: #adb5bd;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bejs__preview-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: calc(100% - 30px);
+  max-height: calc(100% - 30px);
+}
+
+.bejs__preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bejs__search {
+  position: relative;
+}
+
+.bejs__search-value {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  height: 36px;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+  color: #121212;
+  display: block;
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 36px;
+  padding: 0 8px 0 12px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  -webkit-transition: border-color 100ms ease;
+  transition: border-color 100ms ease;
+}
+
+.bejs__search-value-text {
+  display: flex;
+  max-width: calc(100% - 24px);
+  align-items: center;
+}
+
+.bejs__search-value-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #121212;
+}
+
+.bejs__search-value-id {
+  /* flex-shrink: 0; */
+}
+
+.bejs__search-value-clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  color: #BFCEDB;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.bejs__dropdown {
+  position: absolute;
+  top: calc(36px + 10px);
+  width: 100%;
+  min-height: 36px;
+  max-height: 202px;
+  background: #FFFFFF;
+  border: 1px solid #E8ECF0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: auto;
+}
+
+.bejs__dropdown-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bejs__empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #adb5bd;
+  margin: 0;
+}
+
+.bejs__dropdown-el {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  width: 100%;
+  padding: 11px 12px;
+  background-color: #FFFFFF;
+  border: 0;
+  border-bottom: 1px solid #E8ECF0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.bejs__dropdown-el:hover {
+  background-color: #E8ECF0;
+}
+
+.bejs__dropdown-el:last-child {
+  margin-bottom: 0;
+}
+
+.bejs__dropdown-el-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #121212;
+  pointer-events: none;
+}
+
+.bejs__dropdown-el-id {
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.bejs--hidden {
+  display: none;
+}
+
+.bejs__loader {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #adb5bd;
+}
+
+.bejs__loader>div {
+  width: 36px;
+  height: 36px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.bejs--loading > .bejs__loader {
+  display: flex;
+}
+
+.bejs--loading > .bejs__preview,
+.bejs--loading > .bejs__image-holder {
+  opacity: 0;
+}

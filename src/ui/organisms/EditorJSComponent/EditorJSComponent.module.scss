@@ -1,0 +1,13 @@
+.editorStyleFix {
+  :global(.ce-popover) {
+    width: 265px;
+  }
+
+  :global(.codex-editor) {
+    z-index: initial;
+  }
+
+  :global(.codex-editor.codex-editor--toolbox-opened) {
+    z-index: 2;
+  }
+}
